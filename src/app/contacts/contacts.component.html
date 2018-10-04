@@ -1,0 +1,23 @@
+<div class="container spacer">
+  <div class="panel panel-primary">
+    <div class="panel-heading">Contact list</div>
+    <div class="panel-body">
+      <table class="table table-striped">
+        <tr>
+          <th>ID</th>
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>Mail</th>
+          <th>Phone Number</th>
+        </tr>
+        <tr *ngFor="let c of pageContacts?.content">
+          <td>{{ c.id }}</td>
+          <td>{{ c.firstName }}</td>
+          <td>{{ c.lastName }}</td>
+          <td>{{ c.mail }}</td>
+          <td>{{ c.phoneNumber }}</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
